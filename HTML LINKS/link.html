@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- html links are hyperlinks(a connection that allows you to move easily between two computer documents or two pages on the internet) -->
+    <!-- A link does not have to be text. A link can be an image or any other HTML element -->
+    <a href="url">link text</a>
+    <!-- Attributes  -->
+    <!-- href = which indicate the link's destination -->
+    <!-- target = specifies where to open the linked document -->
+
+    <!-- taget attriute values -->
+    <!-- _self = default. opens in the docuemnt in the same window or tab as it was clicek. It is links default value. so we do not need to add it to the link -->
+    <a target="_self" href="https://www.google.com/">Google </a>
+
+    <!-- _blank = opens document in a new tab or window -->
+    <a target="_blank" href="https://www.google.com/">Google </a>
+
+    <!-- _blank vs blank -->
+    <!-- _blank: if have multiple link. "_blank" will open all the link into new separate tab or window -->
+    <a target="_blank" href="https://www.google.com/">Google </a>
+    <a target="_blank" href="https://www.facebook.com/">facebook </a>
+    <a target="_blank" href="https://www.youtube.com/">Youtube </a>
+
+    <!-- blank: if have multiple link. "blank" will open all the link into single new tab or window. 
+        actully they will override each other. 
+        this is how we can prevent multiple tab opening -->
+    <a target="blank" href="https://www.google.com/">Google </a>
+    <a target="blank" href="https://www.facebook.com/">facebook </a>
+    <a target="blank" href="https://www.youtube.com/">Youtube </a>
+
+    <!-- _parent = opens document inside the parent  -->
+    <a target="_parent" href="https://www.google.com/">Google </a>
+
+    <!-- _top = opens document top of everything -->
+    <a target="_top" href="https://www.google.com/">Google </a>
+  </body>
+</html>
