@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- IMAGE MAP -->
+    <!-- using image <map> can create clickable areas on the image -->
+    <!-- areas can be defined with one or more <areas> tags  -->
+    <!-- to create image map must add "usemap" attribute and add this usemap attribute to map name attribute -->
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" />
+    <map name="workmap"> 
+
+    <!-- Clickable area shape valuse -->
+    <!-- rect -->
+    <!-- crood= specifies rect four coordinates -->
+    <area shape="rect" coords="34, 44, 270, 350" href="url to load" />
+
+    <!-- circle -->
+    <!-- crood= specifies center of the circle and radius -->
+    <area shape="circle" coords="337, 300, 44" href="url to load" />
+
+    <!-- ploy -->
+    <!-- can create any shape using poly -->
+    <area
+      shape="poly"
+      coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147"
+      href="url to load"
+    />
+
+    <h2>Example of image map</h2>
+    <p>click on the image</p>
+
+      <img src="./images/img3.jpg" alt="Workplace" usemap="#examplemap" style="border: 1px solid lightgray;"  />
+
+      <map name="examplemap">
+        
+        <area target="blank" alt="google" title="google"  href="https://www.google.com/" coords="195,328,159" shape="circle">
+        <area target="blank" alt="facebook" title="facebook" href="https://www.facebook.com/" coords="962,184,1230,453" shape="rect">
+        <area target="blank" alt="youtube" title="youtube"  coords="411,233,452,194,783,194,828,228,827,413,781,448,465,445,410,402" shape="poly" href="https://www.youtube.com/">
+
+      </map>
+
+
+  </body>
+</html>
+

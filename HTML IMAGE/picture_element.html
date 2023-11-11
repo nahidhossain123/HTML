@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HTML PICTURE ELEMENT -->
+    <!-- <picture> element allows to display different pictures for differnt devices or screen sizes  -->
+    <!-- <picture> element contains one more <source> element -->
+    <!-- media attribute defines when to display the image -->
+    <!-- srcset = set diffent images for source -->
+
+    <h1>Resize your browser to see the effect</h1>
+    <picture>
+      <source media="(min-width: 650px)" srcset="./images/img2.jpg" />
+      <source media="(min-width: 465px)" srcset="./images/img3.jpg" />
+      <img src="./images/img1.webp" />
+    </picture>
+
+    <!-- Best Practices -->
+    <!-- Always specify an <img> element as the last child element of the <picture> element. 
+      The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags match. -->
+
+    <!-- When To use Picture Element -->
+    <!-- Save bandwidth---no need to displayl large image on small size device  -->
+    <!-- Image format support---some browser or device may not support specified image format   -->
+  </body>
+</html>
