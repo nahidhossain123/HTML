@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>HTML ID</h1>
+    <p>ID element is used to specify a unique id for an html element</p>
+    <p>HTML document can not have more than one element with same ID</p>
+    <p>ID attribute is case sensitive</p>
+    <p>
+      must contain one character, cannot start with a number and must not
+      contain whitespace
+    </p>
+    <p>ID is usefull to create html bookmark</p>
+
+    <h3>ID VS CLASS</h3>
+    <p>a class name can be used by Multiple html element</p>
+    <p>while, id must used by one html element</p>
+
+    <h2>Id Attribute in javascript</h2>
+    <h4 id="myHeader">Hello World!</h4>
+    <button onclick="displayResult()">Change text</button>
+
+    <script>
+      function displayResult() {
+        document.getElementById("myHeader").innerHTML = "Have a nice day!";
+      }
+    </script>
+  </body>
+</html>
