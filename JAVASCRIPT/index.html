@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JAVASCRIPT</h1>
+    <p>&lt;script&gt; tag is used to define a client-side script</p>
+    <p>
+      Common uses for JavaScript are image manipulation, form validation, and
+      dynamic changes of content
+    </p>
+    <h2>Use JavaScript to Change Text</h2>
+    <p>
+      This example writes "Hello JavaScript!" into an HTML element with
+      id="demo":
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+
+    <h1>Chage style using JavaScript</h1>
+
+    <p id="change">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <script>
+      function myFunction() {
+        document.getElementById("change").style.fontSize = "25px";
+        document.getElementById("change").style.color = "red";
+        document.getElementById("change").style.backgroundColor = "yellow";
+      }
+    </script>
+
+    <h1>Change attribute using JavaScript</h1>
+    <p>
+      Here, a JavaScript changes the value of the src (source) attribute of an
+      image.
+    </p>
+
+    <script>
+      function light(sw) {
+        var pic;
+        if (sw == 0) {
+          pic = "pic_bulboff.gif";
+        } else {
+          pic = "pic_bulbon.gif";
+        }
+        document.getElementById("myImage").src = pic;
+      }
+    </script>
+
+    <img id="myImage" src="pic_bulboff.gif" width="100" height="180" />
+
+    <p>
+      <button type="button" onclick="light(1)">Light On</button>
+      <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+
+    <h3>&lt;noscript&gt; tag</h3>
+    <p>
+      if the browser does not support the &lt;script&gt; tag or it is disabled
+      than &lt;noscript&gt; tags content will displayed to the user
+    </p>
+  </body>
+</html>
