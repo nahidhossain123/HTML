@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- viewport meta tag set the browser viewport -->
+    <!-- and give the browser instruction on how to control page's dimenstions and scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Responsive Images</h1>
+    <h2>css width: property</h2>
+    <p>
+      scale up to be larger than its original size. it will take the available
+      space
+    </p>
+    <img src="../HTML IMAGE//images/img2.jpg" alt="image" style="width: 100%" />
+    <p>css max-width: property</p>
+    <img
+      src="../HTML IMAGE//images/img2.jpg"
+      alt="image"
+      style="max-width: 100%"
+    />
+
+    <h2>Using Picture Tag</h2>
+    <p>Show Different Images Depending on Browser Width</p>
+    <picture>
+      <source
+        srcset="../HTML IMAGE/images/img1.webp"
+        media="(max-width: 600px)"
+      />
+      <source
+        srcset="../HTML IMAGE/images/img2.jpg"
+        media="(max-width: 1500px)"
+      />
+      <source srcset="../HTML IMAGE/images/img3.jpg" />
+      <img src="../HTML IMAGE/images/img1.webp" alt="Flowers" />
+    </picture>
+  </body>
+</html>
